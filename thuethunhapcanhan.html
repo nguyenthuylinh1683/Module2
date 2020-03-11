@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let giadinh = +prompt("Bạn đã lập gia đình chưa(nếu có nhập 1):");
+        let thunhap = +prompt("Thu nhập một tháng của bạn:");
+        if (giadinh == 1) {
+            if (thunhap <= 5000000) {
+                thunhap = (thunhap * 5) / 100;
+            }
+            else if (thunhap < 10000000) {
+                thunhap = (thunhap * 8) / 100;
+            }
+            else {
+                thunhap = (thunhap * 10) / 100;
+            }
+        }
+        else {
+            if (thunhap <= 5000000) {
+                thunhap = (thunhap * 8) / 100;
+            }
+            else if (thunhap < 10000000) {
+                thunhap = (thunhap * 10) / 100;
+            }
+            else {
+                thunhap = (thunhap * 12) / 100;
+            }
+        }
+
+        alert("Thuế thu nhập cá nhân của bạn là:" + thunhap + "vnd")
+
+    </script>
+</body>
+
+</html>
